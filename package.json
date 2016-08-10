@@ -1,0 +1,31 @@
+{
+  "name": "ionic-slidebutton",
+  "version": "1.0.0",
+  "description": "A slide button component in AngularJS 1.5 to be used in Ionic framework.",
+  "main": "js/slideButtonComponent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsanta/ionic-slidebutton.git"
+  },
+  "keywords": [
+    "slide",
+    "button",
+    "slidebutton",
+    "ios",
+    "drag",
+    "ionic",
+    "angular",
+    "angularjs",
+    "lockscreen",
+    "unlock"
+  ],
+  "author": "Jose Ignacio Santa Cruz G <j@santa.cl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsanta/ionic-slidebutton/issues"
+  },
+  "homepage": "https://github.com/jsanta/ionic-slidebutton#readme"
+}

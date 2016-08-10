@@ -1,0 +1,147 @@
+/**
+* slideButtonComponent.css
+* Styles for slide button component.
+**/
+
+.slide-button {
+    display: block;
+    min-width: 300px;
+
+    padding: 0;
+    margin: 5px 0 0 0;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.slide-button > .col {
+    margin: 1px;
+    padding: 0;
+}
+
+/* Avoid relative sizing due to inherited styles */
+.slide-button button {
+    max-width: 42%;
+    width: 42%;
+/*    padding-left: 0.7em;*/
+/*    padding-right: 0.4em;*/
+/*    font-size: 1.2em;*/
+    padding-right: 6.8px;
+    font-size: 17px!important;
+    font-weight: 500!important;
+    min-height: 47px!important;
+
+    -webkit-touch-callout:  none;
+    -webkit-user-select:    none;
+    -khtml-user-select:     none;
+    -moz-user-select:       none;
+    -ms-user-select:        none;
+    -o-user-select:         none;
+    user-select:            none;
+}
+.slide-button .button.icon-right:before {
+/*    font-size: 1.3em;*/
+    font-size: 22.1px;
+}
+
+.slide-button .button.button-gray {
+    border-color: transparent;
+    background-color: #aaa;
+    color: #fff; }
+.slide-button .button.button-green {
+    border-color: transparent;
+    background-color: #0E802F;
+    color: #fff; }
+
+.slide-button-text {
+    float: right;
+/*    margin: 0.2em;*/
+    margin: 3.52px 10px;
+    text-align: center;
+/*    font-size: 1.1em;*/
+    font-size: 15px;
+    color: #dedede;
+}
+
+.reset-slide-position {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+}
+
+/*
+// Uncomment if not included in other CSS file
+.fade-long{
+    -webkit-transition: opacity 10s;
+    transition: opacity 10s;
+    opacity: 0;
+}
+*/
+
+/* From: http://www.justinaguilar.com/animations/css/animations.css */
+/*
+==============================================
+stretchRight
+==============================================
+*/
+
+.stretchRight{
+    animation-name: stretchRight;
+    -webkit-animation-name: stretchRight;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+
+    transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+}
+
+@keyframes stretchRight {
+    0% {
+        transform: scaleX(0.3);
+    }
+    40% {
+        transform: scaleX(1.02);
+    }
+    60% {
+        transform: scaleX(0.98);
+    }
+    80% {
+        transform: scaleX(1.01);
+    }
+    100% {
+        transform: scaleX(0.98);
+    }
+    80% {
+        transform: scaleX(1.01);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@-webkit-keyframes stretchRight {
+    0% {
+        -webkit-transform: scaleX(0.3);
+    }
+    40% {
+        -webkit-transform: scaleX(1.02);
+    }
+    60% {
+        -webkit-transform: scaleX(0.98);
+    }
+    80% {
+        -webkit-transform: scaleX(1.01);
+    }
+    100% {
+        -webkit-transform: scaleX(0.98);
+    }
+    80% {
+        -webkit-transform: scaleX(1.01);
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+    }
+}

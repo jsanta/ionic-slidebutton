@@ -1,0 +1,16 @@
+<div class="row slide-button">
+   <div class="col col-center">
+      <button type="button" class="button button-gray icon-right "
+              ng-disabled="!!!$ctrl.disabledIf"
+              ng-click="$ctrl.onClick($event)"
+              ng-style="!!$ctrl.disabledIf && {'transform':'translateX(0px)', '-webkit-transform': 'translateX(0px)' }"
+              ng-class="{ 'stretchRight': !!$ctrl.disabledIf,
+                        'button-gray ion-arrow-right-a reset-slide-position': !$ctrl.dragEnabled || !!$ctrl.disabledIf,
+                        'button-green ion-checkmark': $ctrl.dragEnabled }">{{$ctrl.btnLabel}} &nbsp;</button>
+      <span class="slide-button-text" ng-if="!$ctrl.done && !!$ctrl.disabledIf && !$ctrl.resultObj.status && $ctrl.dragEnabled">Deslice para
+         <br>{{$ctrl.authText}}</span>
+       <span class="slide-button-text" ng-if="!$ctrl.done && !!$ctrl.disabledIf && !$ctrl.resultObj.status && !$ctrl.dragEnabled">Presione hasta <br />sentir la vibración</span>
+   </div>
+</div>
+<p ng-show="$ctrl.showMessage || !!$ctrl.disabledIf" class="noFade text-center" ng-class="{ 'fade': $ctrl.showMessage }">Presione el botón hasta sentir la vibración <br /> y luego deslice completamente.</p>
+
